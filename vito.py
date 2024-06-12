@@ -11,7 +11,7 @@ faceRecognizer.read("models/trained_lbph_face_recognizer_model.yml")
 faceCascade = cv2.CascadeClassifier("models/haarcascade_frontalface_default.xml")
 
 # Load sign detection model
-signModel = load_model("keras_Model.h5", compile=False)
+signModel = load_model("keras_model.h5", compile=False)
 class_names = open("labels.txt", "r").readlines()
 
 # Constants for display
